@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinoda | Modern Dining & Delivery</title>
+    <meta
+      name="description"
+      content="A polished, premium restaurant website with live order tracking and seamless cancellations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body data-theme="light">
+    <div class="theme-switcher">
+      <label class="theme-toggle" for="themeToggle">
+        <span>☀️</span>
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+        <span>🌙</span>
+      </label>
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#home">VINODA</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#about">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#services">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cart-button" id="cartButton" type="button" aria-label="View cart">
+        <span>Cart</span>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Modern dining • Crafted daily • Delivered with care</p>
+          <h1>Elevated comfort food for the modern table.</h1>
+          <p>
+            Discover signature dishes, seasonal ingredients, and a refined ordering experience
+            designed to feel as luxurious as the food itself.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Explore Menu</a>
+            <a class="btn btn-secondary" href="#orders">Book Your Order</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <strong>4.9/5</strong>
+              <span>Guest rating</span>
+            </div>
+            <div>
+              <strong>25 min</strong>
+              <span>Fast delivery</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Fresh produce</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hero-restaurant.svg" alt="Premium restaurant interior with fresh dishes" />
+        </div>
+      </section>
+
+      <section class="section promo-strip">
+        <div class="promo-card">
+          <p>Now serving premium comfort meals</p>
+          <span>Freshly prepared • Curated for busy evenings • Delivered in minutes</span>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">Our Story</p>
+          <h2>Inspired by flavor, shaped by craft.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Crafted with intent</h3>
+            <p>
+              Every plate is prepared with seasonal ingredients, thoughtful balance, and the
+              kind of precision that turns an ordinary meal into a memorable moment.
+            </p>
+          </div>
+          <div class="about-card accent">
+            <h3>Designed for ease</h3>
+            <p>
+              From browsing the menu to placing an order, the experience is seamless, elegant,
+              and built for guests who appreciate both taste and convenience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Signature Menu</p>
+          <h2>Curated favorites, elevated.</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="images/pizza.svg" alt="Smoky Pepper Pizza illustration" />
+            <h3>Smoky Pepper Pizza</h3>
+            <p>Wood-fired crust, roasted peppers, and silky mozzarella.</p>
+            <div class="menu-meta">
+              <span>$14.90</span>
+              <button type="button">Add to order</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="images/burger.svg" alt="Classic Smash Burger illustration" />
+            <h3>Classic Smash Burger</h3>
+            <p>Juicy beef patty, melted cheddar, and house sauce.</p>
+            <div class="menu-meta">
+              <span>$12.50</span>
+              <button type="button">Add to order</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="images/pasta.svg" alt="Garden Pasta Bowl illustration" />
+            <h3>Garden Pasta Bowl</h3>
+            <p>Fresh basil, roasted tomatoes, and creamy parmesan finish.</p>
+            <div class="menu-meta">
+              <span>$13.20</span>
+              <button type="button">Add to order</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="images/salad.svg" alt="Bright Citrus Salad illustration" />
+            <h3>Bright Citrus Salad</h3>
+            <p>Crunchy greens, citrus slices, and toasted seeds.</p>
+            <div class="menu-meta">
+              <span>$9.80</span>
+              <button type="button">Add to order</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section order-section" id="orders">
+        <div class="section-heading">
+          <p class="eyebrow">Checkout</p>
+          <h2>Place your order with confidence.</h2>
+        </div>
+        <div class="checkout-layout">
+          <div class="orders-panel">
+            <form class="checkout-form" id="checkoutForm">
+              <input id="customerName" name="customerName" type="text" placeholder="Your name" required />
+              <input id="customerAddress" name="customerAddress" type="text" placeholder="Delivery address" required />
+              <button class="btn btn-primary" type="submit">Place Order</button>
+            </form>
+            <div class="status-row">
+              <p id="ordersStatus">Choose a dish above, then share your details to complete the order.</p>
+              <span class="live-badge">Live</span>
+            </div>
+            <div class="confirmation-card" id="confirmationCard">
+              <div class="confirmation-icon">✓</div>
+              <div>
+                <strong>Order confirmed</strong>
+                <p id="confirmationText">Your food is being prepared.</p>
+              </div>
+            </div>
+            <div class="success-pill" id="successPill">Order placed successfully</div>
+            <ul id="ordersList"></ul>
+          </div>
+          <aside class="order-summary">
+            <h3>Order Summary</h3>
+            <p id="summaryItem">No item selected yet</p>
+            <div class="summary-row"><span>Estimated time</span><strong>25–30 min</strong></div>
+            <div class="summary-row"><span>Delivery fee</span><strong>$2.50</strong></div>
+            <div class="summary-row total"><span>Total</span><strong id="summaryTotal">$0.00</strong></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">The Experience</p>
+          <h2>Luxury service, made effortless.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>⚡ Fast delivery</h3>
+            <p>Prompt service, careful packaging, and warm food on arrival.</p>
+          </article>
+          <article class="service-card">
+            <h3>👨‍🍳 Expert chefs</h3>
+            <p>Every plate is prepared with skill, care, and attention to detail.</p>
+          </article>
+          <article class="service-card">
+            <h3>🥗 Seasonal menus</h3>
+            <p>Fresh ingredients and thoughtful pairings across every course.</p>
+          </article>
+          <article class="service-card">
+            <h3>📞 24/7 support</h3>
+            <p>Friendly assistance whenever you need help with your order.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section location-section">
+        <div class="section-heading">
+          <p class="eyebrow">Location</p>
+          <h2>Visit us or enjoy doorstep delivery.</h2>
+        </div>
+        <div class="location-card">
+          <div class="location-info">
+            <h3>Vinoda Restaurant</h3>
+            <p>12, Orchard Street, Downtown</p>
+            <p>Open daily: 11:00 AM – 11:00 PM</p>
+            <p>Call: +1 (555) 014-2234</p>
+          </div>
+          <div class="location-map" aria-label="Map preview for Vinoda Restaurant">
+            <span>📍</span>
+            <strong>Fast delivery to your area</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="section-heading">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What guests are saying</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p>“A beautiful dining experience from start to finish — polished, warm, and delicious.”</p>
+            <strong>— Maya, London</strong>
+          </article>
+          <article class="review-card">
+            <p>“The service felt effortless and the food looked and tasted exceptional.”</p>
+            <strong>— Daniel, Manchester</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Reserve a table or say hello.</h2>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+          <input id="email" name="email" type="email" placeholder="Your email" />
+          <input id="phone" name="phone" type="tel" placeholder="Phone number" />
+          <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Swizzy. All rights reserved.</p>
+      <div>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
