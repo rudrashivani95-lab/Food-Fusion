@@ -4,7 +4,7 @@ A modern, responsive restaurant landing page built with HTML, CSS, and JavaScrip
 
 ## Live demo
 
-https://rudrashivani95-lab.github.io/Food-Fusion/
+[https://rudrashivani95-lab.github.io/Food-Fusion/](https://rudrashivani95-lab.github.io/Food-Fusion/)
 
 ## Features
 
